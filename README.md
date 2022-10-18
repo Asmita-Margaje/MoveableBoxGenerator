@@ -1,3 +1,7 @@
+## Flytbase Task - Moveable Box Generator  
+
+This task was completed by Asmita Margaje.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,8 +9,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install` (If node modules are not available then use this command)
+### `npm start`  (To start the project using this command)
 
-### `npm start`
+### `npm install reactstrap`  (Used this library for Card,Col,Row to make UI attractive)
+
+### Task Overview
+
+### Use `ADD` Button to add the new box or muliple boxes in the screen.
+
+### Use `Delete` Button to delete the selected Box only.
+
+### `Selected` When you click on the box, the box will be selected or active.
+### Box counts are also shown if a box is added, the count will increase, and if a box is deleted, the count will decrease
+
+### `Toggle Button` If toggle button is turned on, then arrow keys are working fine to move the given box. If toggle button is turned off, then arrow keys are not working.
+
+
+
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  /* margin: 0; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: #f9f9f9; */
+  background-color: #0556f3;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 2px solid #f6f6f6;
+  overflow: hidden;
+  margin: 0 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-header {
+  border-bottom: 1px solid #f6f6f6;
+  padding: 1rem 1.2rem;
+  background-color: #fbfbfb;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343434;
+  margin: 0;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #343434;
+  margin: 0 0 0.3rem 0;
+  margin-top: 1rem;
+}
+
+.card-body {
+  padding: 0rem 1.2rem 1rem 1.2rem;
+}
+
+.input {
+  width: 16rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08rem;
+  padding: 0.6rem 0.8rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #f3f3f3;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.error-message {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: red;
+  margin-top: 0.2rem;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  border-radius: 10px;
+  margin: 4px;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  transition: all 0.5s ease-in-out;
+}
+button {
+  padding: 20px 20px;
+  top: 20;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Segoe UI;
+  border: none;
+  color: "black";
+  border-radius: 11px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.15);
+  transform: translate3d(0, -5px, 5px);
+
+  transition: color 0.5s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0.3s ease-in-out;
+}
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transform: translate3d(0, 0, 0);
+  box-shadow: none;
+}
+.toggle-slide {
+  margin: 20px;
+  border: 5px solid rgb(178, 202, 223);
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  position: relative;
+  transition: all 200ms;
+}
+
+.switch {
+  height: 45px;
+  width: 45px;
+  background-color: rgb(178, 202, 223);
+  border-radius: 999px;
+  top: 0px;
+  left: 2px;
+  transition: ease-in 200ms;
+}
+
+.slide {
+  transition: ease-in 200ms;
+  position: absolute;
+  left: 75%;
 }
